@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		288A68C82384AE60003CF9F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A68C72384AE60003CF9F1 /* AppDelegate.swift */; };
 		288A68CA2384AE60003CF9F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A68C92384AE60003CF9F1 /* SceneDelegate.swift */; };
-		288A68CC2384AE60003CF9F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A68CB2384AE60003CF9F1 /* ViewController.swift */; };
 		288A68CF2384AE60003CF9F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288A68CD2384AE60003CF9F1 /* Main.storyboard */; };
 		288A68D22384AE61003CF9F1 /* RemindMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 288A68D02384AE61003CF9F1 /* RemindMe.xcdatamodeld */; };
 		288A68D42384AE63003CF9F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288A68D32384AE63003CF9F1 /* Assets.xcassets */; };
 		288A68D72384AE63003CF9F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288A68D52384AE63003CF9F1 /* LaunchScreen.storyboard */; };
+		288A68DF2384AF3E003CF9F1 /* ToDoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A68DE2384AF3E003CF9F1 /* ToDoTVC.swift */; };
+		288A68E12384AF67003CF9F1 /* DisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A68E02384AF67003CF9F1 /* DisplayVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		288A68C42384AE60003CF9F1 /* RemindMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288A68C72384AE60003CF9F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		288A68C92384AE60003CF9F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		288A68CB2384AE60003CF9F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		288A68CE2384AE60003CF9F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		288A68D12384AE61003CF9F1 /* RemindMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RemindMe.xcdatamodel; sourceTree = "<group>"; };
 		288A68D32384AE63003CF9F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		288A68D62384AE63003CF9F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		288A68D82384AE63003CF9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		288A68DE2384AF3E003CF9F1 /* ToDoTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTVC.swift; sourceTree = "<group>"; };
+		288A68E02384AF67003CF9F1 /* DisplayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 			children = (
 				288A68C72384AE60003CF9F1 /* AppDelegate.swift */,
 				288A68C92384AE60003CF9F1 /* SceneDelegate.swift */,
-				288A68CB2384AE60003CF9F1 /* ViewController.swift */,
+				288A68DE2384AF3E003CF9F1 /* ToDoTVC.swift */,
+				288A68E02384AF67003CF9F1 /* DisplayVC.swift */,
 				288A68CD2384AE60003CF9F1 /* Main.storyboard */,
 				288A68D32384AE63003CF9F1 /* Assets.xcassets */,
 				288A68D52384AE63003CF9F1 /* LaunchScreen.storyboard */,
@@ -141,10 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				288A68CC2384AE60003CF9F1 /* ViewController.swift in Sources */,
 				288A68C82384AE60003CF9F1 /* AppDelegate.swift in Sources */,
+				288A68E12384AF67003CF9F1 /* DisplayVC.swift in Sources */,
 				288A68D22384AE61003CF9F1 /* RemindMe.xcdatamodeld in Sources */,
 				288A68CA2384AE60003CF9F1 /* SceneDelegate.swift in Sources */,
+				288A68DF2384AF3E003CF9F1 /* ToDoTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
