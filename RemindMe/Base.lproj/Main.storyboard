@@ -38,6 +38,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="56E-p4-Ywk" kind="show" identifier="moveToComplete" id="W6R-Om-xsn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zxw-gg-9sA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,7 +60,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JtL-de-avY">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place text here" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="JtL-de-avY">
                                 <rect key="frame" x="20" y="200" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -114,6 +117,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Web-nv-qh2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1797.1014492753625" y="132.58928571428572"/>
+        </scene>
+        <!--SelectedVC-->
+        <scene sceneID="PI0-Sg-fG8">
+            <objects>
+                <viewController id="56E-p4-Ywk" customClass="SelectedVC" customModule="RemindMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s5D-u6-q8r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psv-sZ-Rzi">
+                                <rect key="frame" x="10" y="208" width="394" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRy-43-pgO">
+                                <rect key="frame" x="20" y="397" width="374" height="72"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="92R-62-oZU"/>
+                                    <constraint firstAttribute="height" constant="72" id="R0R-8J-nMf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
+                                <state key="normal" title="Complete">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addBtnTapped:" destination="FDt-Pg-nPj" eventType="touchUpInside" id="QCZ-UA-s15"/>
+                                    <action selector="completedBtnTapped:" destination="56E-p4-Ywk" eventType="touchUpInside" id="45P-WX-txi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hRy-43-pgO" firstAttribute="top" secondItem="Psv-sZ-Rzi" secondAttribute="bottom" constant="148" id="1pd-d2-yFW"/>
+                            <constraint firstItem="Psv-sZ-Rzi" firstAttribute="top" secondItem="5rO-nG-c5y" secondAttribute="top" constant="120" id="4jk-1M-Oef"/>
+                            <constraint firstItem="hRy-43-pgO" firstAttribute="leading" secondItem="5rO-nG-c5y" secondAttribute="leading" constant="20" id="8Od-tc-nib"/>
+                            <constraint firstItem="Psv-sZ-Rzi" firstAttribute="leading" secondItem="5rO-nG-c5y" secondAttribute="leading" constant="10" id="CzD-fK-B9l"/>
+                            <constraint firstItem="Psv-sZ-Rzi" firstAttribute="centerX" secondItem="s5D-u6-q8r" secondAttribute="centerX" id="LC8-zu-AWd"/>
+                            <constraint firstItem="5rO-nG-c5y" firstAttribute="trailing" secondItem="Psv-sZ-Rzi" secondAttribute="trailing" constant="10" id="j1o-2x-bqT"/>
+                            <constraint firstItem="5rO-nG-c5y" firstAttribute="trailing" secondItem="hRy-43-pgO" secondAttribute="trailing" constant="20" id="wfI-cc-29N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5rO-nG-c5y"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EVx-6V-2HO"/>
+                    <connections>
+                        <outlet property="textLabel" destination="Psv-sZ-Rzi" id="Ylz-6U-g1b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEo-Av-e4O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="829"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="irr-1A-p9z">

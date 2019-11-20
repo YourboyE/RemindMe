@@ -27,13 +27,17 @@ class AddToDoVC: UIViewController {
     // Functions
     @IBAction func addBtnTapped(_ sender: Any) {
         let todo = ToDo()
-        todo.name = textFld.text!
-        todo.isImportant = isImportantSwitch.isOn
         
-        previousVC.todoObj.append(todo)
-        previousVC.tableView.reloadData()
+        if let unwrappedTodoText = textFld.text {
+            todo.name = unwrappedTodoText
+            todo.isImportant = isImportantSwitch.isOn
+            
+            previousVC.todoObj.append(todo)
+            previousVC.tableView.reloadData()
+            
+            navigationController?.popViewController(animated: true)
+        }
         
-        navigationController?.popViewController(animated: true)
         
     }
     

@@ -26,6 +26,8 @@ class ToDoTVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let todo = todoObj[indexPath.row]
+        performSegue(withIdentifier: "moveToComplete", sender: todo)
         
     }
     
@@ -48,9 +50,19 @@ class ToDoTVC: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let addVC = segue.destination as! AddToDoVC
+        if let addVC = segue.destination as? AddToDoVC {
         addVC.previousVC = self
+        }
+        
+        if let selectVC = segue.destination as? SelectedVC {
+            
+            if let item = sender as? ToDo {
+                selectVC.selectedToDo = item
+                selectVC.previousVC = self
+            }
+        }
     }
+    
 
    
     func createToDoList() -> [ToDo] {

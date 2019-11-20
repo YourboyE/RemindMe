@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2827F8432385DA8A0065D8F4 /* SelectedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2827F8422385DA8A0065D8F4 /* SelectedVC.swift */; };
 		288A68C82384AE60003CF9F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A68C72384AE60003CF9F1 /* AppDelegate.swift */; };
 		288A68CA2384AE60003CF9F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A68C92384AE60003CF9F1 /* SceneDelegate.swift */; };
 		288A68CF2384AE60003CF9F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288A68CD2384AE60003CF9F1 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2827F8422385DA8A0065D8F4 /* SelectedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedVC.swift; sourceTree = "<group>"; };
 		288A68C42384AE60003CF9F1 /* RemindMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288A68C72384AE60003CF9F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		288A68C92384AE60003CF9F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				288A68E02384AF67003CF9F1 /* DisplayVC.swift */,
 				28C9CA292384C5F800BD309B /* ToDoClass.swift */,
 				288A68CD2384AE60003CF9F1 /* Main.storyboard */,
+				2827F8422385DA8A0065D8F4 /* SelectedVC.swift */,
 				28C9CA2B2384CFA800BD309B /* AddToDoVC.swift */,
 				288A68D32384AE63003CF9F1 /* Assets.xcassets */,
 				288A68D52384AE63003CF9F1 /* LaunchScreen.storyboard */,
@@ -155,6 +158,7 @@
 				288A68C82384AE60003CF9F1 /* AppDelegate.swift in Sources */,
 				288A68E12384AF67003CF9F1 /* DisplayVC.swift in Sources */,
 				288A68D22384AE61003CF9F1 /* RemindMe.xcdatamodeld in Sources */,
+				2827F8432385DA8A0065D8F4 /* SelectedVC.swift in Sources */,
 				288A68CA2384AE60003CF9F1 /* SceneDelegate.swift in Sources */,
 				288A68DF2384AF3E003CF9F1 /* ToDoTVC.swift in Sources */,
 			);
