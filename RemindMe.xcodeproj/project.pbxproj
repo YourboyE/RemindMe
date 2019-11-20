@@ -15,6 +15,8 @@
 		288A68D72384AE63003CF9F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288A68D52384AE63003CF9F1 /* LaunchScreen.storyboard */; };
 		288A68DF2384AF3E003CF9F1 /* ToDoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A68DE2384AF3E003CF9F1 /* ToDoTVC.swift */; };
 		288A68E12384AF67003CF9F1 /* DisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A68E02384AF67003CF9F1 /* DisplayVC.swift */; };
+		28C9CA2A2384C5F800BD309B /* ToDoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C9CA292384C5F800BD309B /* ToDoClass.swift */; };
+		28C9CA2C2384CFA800BD309B /* AddToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C9CA2B2384CFA800BD309B /* AddToDoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		288A68D82384AE63003CF9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		288A68DE2384AF3E003CF9F1 /* ToDoTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTVC.swift; sourceTree = "<group>"; };
 		288A68E02384AF67003CF9F1 /* DisplayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayVC.swift; sourceTree = "<group>"; };
+		28C9CA292384C5F800BD309B /* ToDoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoClass.swift; sourceTree = "<group>"; };
+		28C9CA2B2384CFA800BD309B /* AddToDoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,9 @@
 				288A68C92384AE60003CF9F1 /* SceneDelegate.swift */,
 				288A68DE2384AF3E003CF9F1 /* ToDoTVC.swift */,
 				288A68E02384AF67003CF9F1 /* DisplayVC.swift */,
+				28C9CA292384C5F800BD309B /* ToDoClass.swift */,
 				288A68CD2384AE60003CF9F1 /* Main.storyboard */,
+				28C9CA2B2384CFA800BD309B /* AddToDoVC.swift */,
 				288A68D32384AE63003CF9F1 /* Assets.xcassets */,
 				288A68D52384AE63003CF9F1 /* LaunchScreen.storyboard */,
 				288A68D82384AE63003CF9F1 /* Info.plist */,
@@ -144,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28C9CA2C2384CFA800BD309B /* AddToDoVC.swift in Sources */,
+				28C9CA2A2384C5F800BD309B /* ToDoClass.swift in Sources */,
 				288A68C82384AE60003CF9F1 /* AppDelegate.swift in Sources */,
 				288A68E12384AF67003CF9F1 /* DisplayVC.swift in Sources */,
 				288A68D22384AE61003CF9F1 /* RemindMe.xcdatamodeld in Sources */,

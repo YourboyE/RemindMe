@@ -9,11 +9,16 @@
 import UIKit
 
 class DisplayVC: UIViewController {
+    
+    @IBOutlet weak var todoTextLabel: UILabel!
+    
+    var itemTodo = ToDo()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
     }
     
 
